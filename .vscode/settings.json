@@ -1,0 +1,33 @@
+{
+    "typescript.preferences.importModuleSpecifier": "relative",
+    "editor.insertSpaces": false,
+    "editor.detectIndentation": false,
+    "editor.tabSize": 4,
+    "[sass]": {
+        "editor.tabSize": 2
+    },
+    "[html]": {
+        "editor.tabSize": 4
+    },
+    "[javascript]": {
+        "editor.tabSize": 2
+    },
+    "[typescript]": {
+        "editor.tabSize": 4,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true
+    },
+    "[typescriptreact]": {
+        "editor.tabSize": 2
+    },
+    "[php]": {
+        "editor.tabSize": 4
+    },
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "typescript.format.semicolons": "insert",
+    "editor.formatOnSave": true,
+    "editor.guides.indentation": true,
+    "importSorter.generalConfiguration.sortOnBeforeSave": true,
+    "importSorter.sortConfiguration.removeUnusedImports": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+}
