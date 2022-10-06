@@ -13,7 +13,7 @@ content-type: application/json
 
 ### Find a user with a given ID
 
-GET http://127.0.0.1:8000/auth/2
+GET http://127.0.0.1:8000/auth/1
 
 
 ### Find all users with a given Email

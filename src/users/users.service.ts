@@ -1,6 +1,6 @@
 import { Repository } from 'typeorm';
 
-import { Injectable } from '@nestjs/common';
+import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 
 import { CreateUserDto } from './dto/create-user.dto';
@@ -65,7 +65,7 @@ export class UsersService {
 		const user = await this.findOne(id);
 
 		if (!user) {
-			throw new Error(`User not found`);
+			throw new NotFoundException(`Could not find the user with ID : ${id}`);
 		}
 
 		Object.assign(user, attrs); // copy and replace all the properties of attrs to user
@@ -82,7 +82,7 @@ export class UsersService {
 		const user = await this.findOne(id);
 
 		if (!user) {
-			throw new Error(`User not found`);
+			throw new NotFoundException(`Could not find the user with ID : ${id}`);
 		}
 
 		return this.repo.remove(user);
