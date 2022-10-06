@@ -9,3 +9,30 @@ content-type: application/json
     "email": "am@am.am",
     "password": "password"
 }
+
+
+### Find a user with a given ID
+
+GET http://127.0.0.1:8000/auth/2
+
+
+### Find all users with a given Email
+
+GET http://127.0.0.1:8000/auth?email=am@am.am
+
+
+### Delete a user with a given ID
+
+DELETE http://127.0.0.1:8000/auth/4
+
+
+
+### Update a user with a given ID
+
+PATCH http://127.0.0.1:8000/auth/1
+Content-Type: application/json
+
+{
+	"email": "am@am.am",
+	"password": "asdhjasd"
+}
